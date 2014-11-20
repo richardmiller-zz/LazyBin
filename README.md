@@ -1,6 +1,9 @@
 LazyBin
 =======
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/richardmiller/LazyBin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/richardmiller/LazyBin/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/richardmiller/LazyBin/badges/build.png?b=master)](https://scrutinizer-ci.com/g/richardmiller/LazyBin/build-status/master)
+
 Runs various commands to save me a few keystrokes.
 
 Running various commands e.g. behat and phpspec while developing means
