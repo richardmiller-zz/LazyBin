@@ -10,6 +10,9 @@ use Symfony\Component\Process\PhpExecutableFinder;
 
 class CommandRunner
 {
+    /**
+     * @param string $command
+     */
     public function runCommand($command)
     {
         foreach ($this->getProcessRunners() as $runner) {
