@@ -23,13 +23,14 @@ class RunCommand extends Command
     }
 
     /**
+     * @throws \RuntimeException
      * @return array
      */
     private function getCommands()
     {
         $configFile = 'lazybin.yml';
         if (!is_file($configFile)) {
-            return [];
+            throw new \RuntimeException('no lazybin.yml file found');
         }
 
         return $this->cleanCommands(Yaml::parse(file_get_contents($configFile))['commands']);
